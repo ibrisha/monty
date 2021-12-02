@@ -1,6 +1,7 @@
 #include "monty.h"
+#include <stdio.h>
 
-globalvar = {NULL, NULL, NULL};
+globales_t globalvar = {NULL, NULL, NULL};
 
 /**
  * main - entry point for the CLI program
