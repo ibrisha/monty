@@ -23,7 +23,7 @@ void push(stack_t **stack, unsigned int line_number)
 		stderr_int(line_number);
 	}
 	n = atoi(globalvar.token2);
-	if (check_opcode(*stack)  == STACK)
+	if (*stack == NULL)
 	{
 		create_node_stackfirst(stack, n);
 	}
