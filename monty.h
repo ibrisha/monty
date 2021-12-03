@@ -16,7 +16,7 @@
 #define DELIM " \n\t\a\b"
 
 /**
- * globales_s - struct with variable globals
+ *struct globales_s - struct with variable globals
  * @token2: integer
  * @fd: points to the previous element of the stack (or queue)
  * @line_buf: points to the next element of the stack (or queue)
@@ -114,26 +114,27 @@ void full_buff(unsigned int num, unsigned int base, char *buff, int buff_size);
 void pop_e(unsigned int line_number);
 void pint_e(unsigned int line_number);
 void pchar_e(unsigned int line_number, char *msg);
-int _isdigit();
+int _isdigit(void);
 void free_dlistint(stack_t *stack);
 void free_globalvars(void);
 void rotr(stack_t **stack, unsigned int line_number);
 stack_t *add_dnodeint(stack_t **head, int n);
-
-/* UNUSED F
-void pop(stack_t **stack, unsigned int line_number);
-void pint(stack_t **stack, unsigned int line_number);
-int cmd_monty(FILE *fd);
-void free_tok(void);
-int check_delim(char stream, char *delim);
-int wstrlen(char *str, char *delim);
-int wcounter(char *str, char *delim);
-char **strtow(char *str, char *delim);
-char *wnext(char *str, char *delim);
-int create_node_stack(stack_t **stack);
-void free_node_stack(stack_t **stack);
-int no_line(char *line, char *delim);
 int check_opcode(stack_t *stack);
+
+/**
+ * UNUSED F
+ *void pop(stack_t **stack, unsigned int line_number);
+ *void pint(stack_t **stack, unsigned int line_number);
+ *int cmd_monty(FILE *fd);
+ *void free_tok(void);
+ *int check_delim(char stream, char *delim);
+ *int wstrlen(char *str, char *delim);
+ *int wcounter(char *str, char *delim);
+ *char **strtow(char *str, char *delim);
+ *char *wnext(char *str, char *delim);
+ *int create_node_stack(stack_t **stack);
+ *void free_node_stack(stack_t **stack);
+ *int no_line(char *line, char *delim);
 */
 
 
